@@ -1,0 +1,2 @@
+# lino.ninja
+Personal website
