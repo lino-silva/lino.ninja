@@ -9,26 +9,328 @@
 <meta property="og:image" content="" />
 <meta property="og:description" content="A software engineer, LEGO lover, beer drinker, avid gamer kind of guy." />
 <meta property="og:site_name" content="Lino Silva" />
+<link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css" />
+<link rel="stylesheet" href="css/style.css" />
+<script src="bower_components/modernizr/modernizr.js"></script>
 </head>
-<body>
+<body data-spy="scroll" data-target="#main_nav">
 	<header>
-  	<nav>
-  	  <a href="#about">About Me</a>
-  	  <a href="#story">My Story</a>
-      <a href="#work">Work</a>
-  	  <a href="#contact">Contact</a>
-  	</nav>
-    <img src="" id="profile_pic" alt="Lino Silva" />
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="border-white navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar bgcolor-white"></span>
+            <span class="icon-bar bgcolor-white"></span>
+            <span class="icon-bar bgcolor-white"></span>
+          </button>
+        </div>
+
+        <div id="main_nav" class="collapse navbar-collapse" id="navbar-collapse">
+          <ul class="nav navbar-nav" role="navigation">
+            <li><a href="#about">About</a></li>
+            <li><a href="#story">My Story</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
 	</header>
   <main>
     <section id="about">
+      <div class="row">
+        <div class="col-xs-12 text-center">
+          <img id="profile_image" src="http://i.imgur.com/uwQt4YS.jpg?1" id="profile_pic" alt="Lino Silva" class="img-circle" />
+          <h1>
+            <span class="color-blue">Hi! I'm Lino Silva.</span>
+          </h1>
+          <h4 class="color-blue">
+            A software engineer, LEGO lover, beer drinker, avid gamer kind of guy.
+          </h4>
+        </div>
+      </div>
     </section>
     <section id="story">
+      <h2 class="text-center">Where have I been, you ask?</h2>
+      <div class="row">
+        <div class="col-xs-6 col-sm-4 text-center story-container">
+          <span class="story-year">1986</span>
+          <div class="story-image-container">
+            <img class="story-image" src="imgs/brazil.png" alt="Born in Rio de Janeiro, Brazil" />
+          </div>
+          <span class="story-description">Born in Rio de Janeiro, Brazil</span>
+        </div>
+        <div class="col-xs-6 col-sm-4 text-center story-container">
+          <span class="story-year">2001</span>
+          <div class="story-image-container">
+            <img class="story-image" src="imgs/portugal.png" alt="Moved to Braga, Portugal" />
+          </div>
+          <span class="story-description">Moved to Braga, Portugal</span>
+        </div>
+        <div class="col-xs-6 col-sm-4 text-center story-container">
+          <span class="story-year">2002</span>
+          <div class="story-image-container">
+            <img class="story-image" src="imgs/tennis.png" alt="Played semi-pro tennis for about a year" />
+          </div>
+          <span class="story-description">Played semi-pro tennis for about a year</span>
+        </div>
+        <div class="col-xs-6 col-sm-4 text-center story-container">
+          <span class="story-year">2004</span>
+          <div class="story-image-container">
+            <img class="story-image" src="imgs/university.png" alt="Enrolled as a Software Engineering student at Minho University" />
+          </div>
+          <span class="story-description">Enrolled as a Software Engineering student at Minho University</span>
+        </div>
+        <div class="col-xs-6 col-sm-4 text-center story-container">
+          <span class="story-year">2004</span>
+          <div class="story-image-container">
+            <img class="story-image" src="imgs/beer.png" alt="Learned about the wonders of beer" />
+          </div>
+          <span class="story-description">Learned about the wonders of beer</span>
+        </div>
+        <div class="col-xs-6 col-sm-4 text-center story-container">
+          <span class="story-year">2010</span>
+          <div class="story-image-container">
+            <img class="story-image" src="imgs/work.png" alt="Started life as a working man" />
+          </div>
+          <span class="story-description">Started life as a working man</span>
+        </div>
+        <div class="col-xs-6 col-xs-offset-3 col-sm-4 col-sm-offset-4 text-center">
+          <span class="story-year present">Present day</span>
+          <div class="story-image-container">
+            <img class="story-image nyan" src="imgs/nyan.gif" alt="Being awesome" />
+          </div>
+          <span class="story-description present">Being awesome</span>
+        </div>
+      </div>
     </section>
     <section id="work">
+      <h2 class="text-center color-blue">What have I been doing?</h2>
+      <div id="timeline" class="timeline-container">
+        <div class="timeline-block">
+          <div class="timeline-img"></div>
+
+          <div class="timeline-content">
+            <h2>Intern - Plako</h2>
+            <ul>
+              <li>Turning a PSD design into a fully-functional website, making use of home grown Portal and CMS.</li>
+              <li>Maintain and develop core modules of said applications, as well as live websites</li>
+            </ul>
+            <p>Main Technologies:</p>
+            <div class="row">
+              <div class="col-xs-3">Javascript</div>
+              <div class="col-xs-9">
+                <div id="plako-javascript">30%</div>
+              </div>
+              <div class="col-xs-3">HTML</div>
+              <div class="col-xs-9">
+                <div id="plako-html">15%</div>
+              </div>
+              <div class="col-xs-3">CSS</div>
+              <div class="col-xs-9">
+                <div id="plako-css">20%</div>
+              </div>
+              <div class="col-xs-3">PHP</div>
+              <div class="col-xs-9">
+                <div id="plako-php">25%</div>
+              </div>
+              <div class="col-xs-3">XUL</div>
+              <div class="col-xs-9">
+                <div id="plako-xul">10%</div>
+              </div>
+            </div>
+            <span class="date">Nov 2010 - July 2011</span>
+          </div> <!-- timeline-content -->
+        </div> <!-- timeline-block -->
+
+        <div class="timeline-block">
+          <div class="timeline-img"></div>
+
+          <div class="timeline-content">
+            <h2>Junior Web Developer - Farfetch</h2>
+            <ul>
+              <li>Part of the Partners/Portal Team, responsible for creating/maintaining new and existing partner websites, as well as farfetch.com</li>
+            </ul>
+            <p>Main Projects</p>
+            <ul>
+              <li>Multi-faceted asynchronous catalog browser</li>
+              <li>Infinite scroll editorial page</li>
+              <li>Full-screen image zoom image plugin</li>
+            </ul>
+            <p>Main Technologies:</p>
+            <div class="row">
+              <div class="col-xs-3">Javascript</div>
+              <div class="col-xs-9">
+                <div id="junior-farfetch-javascript">40%</div>
+              </div>
+              <div class="col-xs-3">HTML</div>
+              <div class="col-xs-9">
+                <div id="junior-farfetch-html">15%</div>
+              </div>
+              <div class="col-xs-3">CSS</div>
+              <div class="col-xs-9">
+                <div id="junior-farfetch-css">15%</div>
+              </div>
+              <div class="col-xs-3">.NET</div>
+              <div class="col-xs-9">
+                <div id="junior-farfetch-dotnet">30%</div>
+              </div>
+            </div>
+            <span class="date">Sep 2011 - Sep 2012</span>
+          </div> <!-- timeline-content -->
+        </div> <!-- timeline-block -->
+
+        <div class="timeline-block">
+          <div class="timeline-img"></div>
+
+          <div class="timeline-content">
+            <h2>Web Developer - Farfetch</h2>
+            <ul>
+              <li>Part of the Portal team, team responsible for maintaining and driving the product’s new features. Working alongside UI, Design and UX teams using SCRUM methodologies.</li>
+            </ul>
+            <p>Main Projects</p>
+            <ul>
+              <li>Qubit OpenTag integration</li>
+              <li>Clickstream (streaming server and collector pixel)</li>
+              <li>Parallax homepage</li>
+              <li>Recommendation engine integration</li>
+            </ul>
+            <p>Main Technologies:</p>
+            <div class="row">
+              <div class="col-xs-3">Javascript</div>
+              <div class="col-xs-9">
+                <div id="farfetch-javascript">50%</div>
+              </div>
+              <div class="col-xs-3">HTML</div>
+              <div class="col-xs-9">
+                <div id="farfetch-html">10%</div>
+              </div>
+              <div class="col-xs-3">CSS</div>
+              <div class="col-xs-9">
+                <div id="farfetch-css">10%</div>
+              </div>
+              <div class="col-xs-3">.NET</div>
+              <div class="col-xs-9">
+                <div id="farfetch-dotnet">30%</div>
+              </div>
+            </div>
+            <span class="date">Sep 2012 - Sep 2013</span>
+          </div> <!-- timeline-content -->
+        </div> <!-- timeline-block -->
+
+        <div class="timeline-block">
+          <div class="timeline-img"></div>
+
+          <div class="timeline-content">
+            <h2>Senior Web Developer - Farfetch</h2>
+            <ul>
+              <li>Part of the Partners/Portal Team, responsible for creating/maintaining new and existing partner websites, as well as farfetch.com</li>
+            </ul>
+            <p>Main Projects</p>
+            <ul>
+              <li>Multi-faceted asynchronous catalog browser</li>
+              <li>Infinite scroll editorial page</li>
+              <li>Full-screen image zoom image plugin</li>
+            </ul>
+            <p>Main Technologies:</p>
+            <div class="row">
+              <div class="col-xs-3">Javascript</div>
+              <div class="col-xs-9">
+                <div id="senior-farfetch-javascript">60%</div>
+              </div>
+              <div class="col-xs-3">HTML</div>
+              <div class="col-xs-9">
+                <div id="senior-farfetch-html">10%</div>
+              </div>
+              <div class="col-xs-3">CSS</div>
+              <div class="col-xs-9">
+                <div id="senior-farfetch-css">10%</div>
+              </div>
+              <div class="col-xs-3">.NET</div>
+              <div class="col-xs-9">
+                <div id="senior-farfetch-dotnet">20%</div>
+              </div>
+            </div>
+            <span class="date">Sep 2013 - Feb 2014</span>
+          </div> <!-- timeline-content -->
+        </div> <!-- timeline-block -->
+
+        <div class="timeline-block">
+          <div class="timeline-img"></div>
+
+          <div class="timeline-content">
+            <h2>Senior Web Developer - Farfetch</h2>
+            <ul>
+              <li>First engineer part of the newly-created Labs (R&D) team, responsible for practicing and promoting innovation across the organisation.</li>
+            </ul>
+            <p>Main Projects</p>
+            <ul>
+              <li>Centralised logging with ELK stack</li>
+              <li>iOS iBeacons Prototype</li>
+              <li>3D Visualisation</li>
+              <li>Natural data interfaces</li>
+              <li>A/B testing framework</li>
+              <li>Sentiment analysis service</li>
+              <li>iOS Automated user testing</li>
+              <li>URL shortner service</li>
+              <li>Internal Hackathon organisation</li>
+            </ul>
+            <p>Main Technologies:</p>
+            <div class="row">
+              <div class="col-xs-3">Javascript</div>
+              <div class="col-xs-9">
+                <div id="senior-labs-farfetch-javascript">50%</div>
+              </div>
+              <div class="col-xs-3">HTML</div>
+              <div class="col-xs-9">
+                <div id="senior-labs-farfetch-html">10%</div>
+              </div>
+              <div class="col-xs-3">CSS</div>
+              <div class="col-xs-9">
+                <div id="senior-labs-farfetch-css">10%</div>
+              </div>
+              <div class="col-xs-3">iOS</div>
+              <div class="col-xs-9">
+                <div id="senior-labs-farfetch-ios">5%</div>
+              </div>
+              <div class="col-xs-3">Python</div>
+              <div class="col-xs-9">
+                <div id="senior-labs-farfetch-python">20%</div>
+              </div>
+              <div class="col-xs-3">WebGL</div>
+              <div class="col-xs-9">
+                <div id="senior-labs-farfetch-webgl">5%</div>
+              </div>
+            </div>
+            <span class="date">Sep 2011 - Sep 2012</span>
+          </div> <!-- timeline-content -->
+        </div> <!-- timeline-block -->
+      </div> <!-- timeline -->
+
     </section>
   </main>
-  <footer id="contact">
+  <footer id="contact" class="text-center">
+    <h2 class="color-white">Questions?</h2>
+    <p class="lead">Ping me through either one of those:</p>
+    <p>
+      <span>linkedin</span>
+      <br />
+      <a target="_blank" class="color-white" href="https://www.linkedin.com/in/linosilva">https://www.linkedin.com/in/linosilva</a>
+    </p>
+    <p>
+      <span>twitter</span>
+      <br />
+      <a target="_blank" class="color-white" href="https://twitter.com/LinoSilva">https://twitter.com/LinoSilva</a>
+    </p>
+    <p>
+      <span>facebook</span>
+      <br />
+      <a target="_blank" class="color-white" href="https://fb.me/linolsilva">https://fb.me/linolsilva</a>
+    </p>
   </footer>
+  <script src="bower_components/jquery/dist/jquery.min.js"></script>
+  <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
