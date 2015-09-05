@@ -14,7 +14,8 @@
 <script src="bower_components/modernizr/modernizr.js"></script>
 </head>
 <body data-spy="scroll" data-target="#main_nav">
-	<header>
+	<header class="bgcolor-blue">
+    <img id="profile_image" src="imgs/profilepic.jpg" id="profile_pic" alt="Lino Silva" class="img-circle" />
     <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container-fluid">
         <div class="navbar-header">
@@ -36,24 +37,27 @@
         </div><!-- /.navbar-collapse -->
       </div><!-- /.container-fluid -->
     </nav>
-	</header>
+  </header>
   <main>
     <section id="about">
       <div class="row">
         <div class="col-xs-12 text-center">
-          <img id="profile_image" src="http://i.imgur.com/uwQt4YS.jpg?1" id="profile_pic" alt="Lino Silva" class="img-circle" />
           <h1>
             <span class="color-blue">Hi! I'm Lino Silva.</span>
           </h1>
           <h4 class="color-blue">
             A software engineer, LEGO lover, beer drinker, avid gamer kind of guy.
           </h4>
+          <div class="col-xs-12">
+            <div class="teaser color-blue">Find out more below</div>
+            <div class="glyphicon glyphicon-chevron-down color-blue"></div>
+          </div>
         </div>
       </div>
     </section>
     <section id="story">
       <h2 class="text-center">Where have I been, you ask?</h2>
-      <div class="row">
+      <div class="row story-wrapper">
         <div class="col-xs-6 col-sm-4 text-center story-container">
           <span class="story-year">1986</span>
           <div class="story-image-container">
@@ -121,23 +125,23 @@
             <div class="row">
               <div class="col-xs-3">Javascript</div>
               <div class="col-xs-9">
-                <div id="plako-javascript">30%</div>
+                <div class="main-technologies pc100" id="plako-javascript">30%</div>
               </div>
               <div class="col-xs-3">HTML</div>
               <div class="col-xs-9">
-                <div id="plako-html">15%</div>
+                <div class="main-technologies pc50" id="plako-html">15%</div>
               </div>
               <div class="col-xs-3">CSS</div>
               <div class="col-xs-9">
-                <div id="plako-css">20%</div>
+                <div class="main-technologies pc67" id="plako-css">20%</div>
               </div>
               <div class="col-xs-3">PHP</div>
               <div class="col-xs-9">
-                <div id="plako-php">25%</div>
+                <div class="main-technologies pc84" id="plako-php">25%</div>
               </div>
               <div class="col-xs-3">XUL</div>
               <div class="col-xs-9">
-                <div id="plako-xul">10%</div>
+                <div class="main-technologies pc34" id="plako-xul">10%</div>
               </div>
             </div>
             <span class="date">Nov 2010 - July 2011</span>
@@ -156,25 +160,25 @@
             <ul>
               <li>Multi-faceted asynchronous catalog browser</li>
               <li>Infinite scroll editorial page</li>
-              <li>Full-screen image zoom image plugin</li>
+              <li>Full-screen image zoom plugin</li>
             </ul>
             <p>Main Technologies:</p>
             <div class="row">
               <div class="col-xs-3">Javascript</div>
               <div class="col-xs-9">
-                <div id="junior-farfetch-javascript">40%</div>
+                <div class="main-technologies pc100" id="junior-farfetch-javascript">40%</div>
               </div>
               <div class="col-xs-3">HTML</div>
               <div class="col-xs-9">
-                <div id="junior-farfetch-html">15%</div>
+                <div class="main-technologies pc38" id="junior-farfetch-html">15%</div>
               </div>
               <div class="col-xs-3">CSS</div>
               <div class="col-xs-9">
-                <div id="junior-farfetch-css">15%</div>
+                <div class="main-technologies pc38" id="junior-farfetch-css">15%</div>
               </div>
               <div class="col-xs-3">.NET</div>
               <div class="col-xs-9">
-                <div id="junior-farfetch-dotnet">30%</div>
+                <div class="main-technologies pc75" id="junior-farfetch-dotnet">30%</div>
               </div>
             </div>
             <span class="date">Sep 2011 - Sep 2012</span>
@@ -187,7 +191,7 @@
           <div class="timeline-content">
             <h2>Web Developer - Farfetch</h2>
             <ul>
-              <li>Part of the Portal team, team responsible for maintaining and driving the product’s new features. Working alongside UI, Design and UX teams using SCRUM methodologies.</li>
+              <li>Part of the Portal team, responsible for maintaining and driving the product’s new features. Working alongside UI, Design and UX teams using SCRUM methodologies.</li>
             </ul>
             <p>Main Projects</p>
             <ul>
@@ -200,19 +204,19 @@
             <div class="row">
               <div class="col-xs-3">Javascript</div>
               <div class="col-xs-9">
-                <div id="farfetch-javascript">50%</div>
+                <div class="main-technologies pc100" id="farfetch-javascript">50%</div>
               </div>
               <div class="col-xs-3">HTML</div>
               <div class="col-xs-9">
-                <div id="farfetch-html">10%</div>
+                <div class="main-technologies pc20" id="farfetch-html">10%</div>
               </div>
               <div class="col-xs-3">CSS</div>
               <div class="col-xs-9">
-                <div id="farfetch-css">10%</div>
+                <div class="main-technologies pc20" id="farfetch-css">10%</div>
               </div>
               <div class="col-xs-3">.NET</div>
               <div class="col-xs-9">
-                <div id="farfetch-dotnet">30%</div>
+                <div class="main-technologies pc60" id="farfetch-dotnet">30%</div>
               </div>
             </div>
             <span class="date">Sep 2012 - Sep 2013</span>
@@ -237,19 +241,19 @@
             <div class="row">
               <div class="col-xs-3">Javascript</div>
               <div class="col-xs-9">
-                <div id="senior-farfetch-javascript">60%</div>
+                <div class="main-technologies pc100" id="senior-farfetch-javascript">60%</div>
               </div>
               <div class="col-xs-3">HTML</div>
               <div class="col-xs-9">
-                <div id="senior-farfetch-html">10%</div>
+                <div class="main-technologies pc17" id="senior-farfetch-html">10%</div>
               </div>
               <div class="col-xs-3">CSS</div>
               <div class="col-xs-9">
-                <div id="senior-farfetch-css">10%</div>
+                <div class="main-technologies pc17" id="senior-farfetch-css">10%</div>
               </div>
               <div class="col-xs-3">.NET</div>
               <div class="col-xs-9">
-                <div id="senior-farfetch-dotnet">20%</div>
+                <div class="main-technologies pc34" id="senior-farfetch-dotnet">20%</div>
               </div>
             </div>
             <span class="date">Sep 2013 - Feb 2014</span>
@@ -280,27 +284,27 @@
             <div class="row">
               <div class="col-xs-3">Javascript</div>
               <div class="col-xs-9">
-                <div id="senior-labs-farfetch-javascript">50%</div>
+                <div class="main-technologies pc100" id="senior-labs-farfetch-javascript">50%</div>
               </div>
               <div class="col-xs-3">HTML</div>
               <div class="col-xs-9">
-                <div id="senior-labs-farfetch-html">10%</div>
+                <div class="main-technologies pc20" id="senior-labs-farfetch-html">10%</div>
               </div>
               <div class="col-xs-3">CSS</div>
               <div class="col-xs-9">
-                <div id="senior-labs-farfetch-css">10%</div>
+                <div class="main-technologies pc20" id="senior-labs-farfetch-css">10%</div>
               </div>
               <div class="col-xs-3">iOS</div>
               <div class="col-xs-9">
-                <div id="senior-labs-farfetch-ios">5%</div>
+                <div class="main-technologies pc10" id="senior-labs-farfetch-ios">5%</div>
               </div>
               <div class="col-xs-3">Python</div>
               <div class="col-xs-9">
-                <div id="senior-labs-farfetch-python">20%</div>
+                <div class="main-technologies pc40" id="senior-labs-farfetch-python">20%</div>
               </div>
               <div class="col-xs-3">WebGL</div>
               <div class="col-xs-9">
-                <div id="senior-labs-farfetch-webgl">5%</div>
+                <div class="main-technologies pc10" id="senior-labs-farfetch-webgl">5%</div>
               </div>
             </div>
             <span class="date">Sep 2011 - Sep 2012</span>
