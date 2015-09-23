@@ -67,6 +67,10 @@ h1 {
   padding-bottom: 10px;
 }
 
+#teaser-link:hover {
+  text-decoration: none;
+}
+
 #about .glyphicon-chevron-down {
   font-size: 20px;
 }
@@ -446,8 +450,8 @@ Main components
   position: fixed;
   top: 0;
   left: 10%;
-  height: 60px;
-  border-width: 5px;
+  height: 70px;
+  border: 5px solid #0F3A5D;
   z-index: 2000;
 }
 
@@ -462,7 +466,7 @@ header {
 
 @media only screen and (min-width: 768px) {
   header {
-    min-height: 200px;
+    min-height: 220px;
   }
 
   #about {
@@ -476,7 +480,7 @@ header {
 
   #profile_image {
     position: relative;
-    top: 100px;
+    top: 120px;
     border: 10px solid #0F3A5D;
     border-width: 10px;
     height: 200px;

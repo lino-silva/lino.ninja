@@ -2,7 +2,9 @@ var timelineBlocks = $('.timeline-block'),
   offset = 0.8,
   jQWindow = $(window),
   windowHeight = jQWindow.height(),
-  profile_image = document.getElementById('profile_image');
+  profile_image = document.getElementById('profile_image'),
+  imageOffsetTop = profile_image.offsetTop,
+  imageHeight = profile_image.clientHeight;
 
 //hide timeline blocks which are outside the viewport
 hideBlocks(timelineBlocks, offset);
@@ -28,7 +30,7 @@ function hideBlocks(blocks, offset) {
     ( jQThis.offset().top > scrollTop + windowHeight * offset ) && jQThis.find('.timeline-img, .timeline-content').addClass('is-hidden');
   });
 
-  (scrollTop > 150)?
+  (scrollTop > imageOffsetTop + (imageHeight / 2))?
     profile_image.classList.add('collapsed'):
     profile_image.classList.remove('collapsed');
 }
@@ -40,7 +42,7 @@ function showBlocks(blocks, offset) {
     (jQThis.offset().top <= scrollTop + windowHeight * offset && jQThis.find('.timeline-img').hasClass('is-hidden') ) && jQThis.find('.timeline-img, .timeline-content').removeClass('is-hidden').addClass('bounce-in');
   });
   
-  (scrollTop > 150)?
+  (scrollTop > imageOffsetTop + (imageHeight / 2))?
     profile_image.classList.add('collapsed'):
     profile_image.classList.remove('collapsed');
 }
@@ -59,3 +61,18 @@ if (story_container && story_container.length) {
     story_container.css('height', max);
   }, 20);
 }
+
+$(function() {
+  $('a[href*=#]:not([href=#])').on("click", function () {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top - 60
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
